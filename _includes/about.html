@@ -1,0 +1,25 @@
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me and This Blog</h2>
+                <p>Hi, Guys, I'm Luffy, graduated from <a
+                    href="http://www.manchester.ac.uk/">The University of
+                    Manchester</a> majoring in <a
+                    href="http://www.maths.manchester.ac.uk/">Statistics</a>. Now, I'm working as a data scientist in <a href="http://www.dratio.com/">DRATIO INTERNET
+                    DATA SERVICE CO.,LTD</a>, China. "Playing fun with data" is always
+                my focus and the reason of building this blog is to record the
+                process of "Never Stop to Learn". If we are the same guy,
+                please contact <a
+                    href="mailto:ludafei@dratio.com?subject=Hello%20Luffy">me</a>.
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
